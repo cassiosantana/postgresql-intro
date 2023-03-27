@@ -30,3 +30,18 @@ Select simples para obter todos o campos da tabela
 ```sql
 SELECT * FROM tb_fime;
 ```
+
+Criando tabela tb_produtora
+```sql
+CREATE TABLE tb_produtora (
+    id_produtora int NOT NULL,
+    nome_produtora varchar(50),
+    PRIMARY KEY (id_produtora),
+);
+```
+
+Fazendo referência entre as tabelas tb_filme e tb_produtora
+```sql
+ALTER TABLE tb_filme
+ADD CONSTRAINT fk_id_produtora FOREIGN KEY (id_produtora) REFERENCES tb_produtora(id_produtora)
+```
