@@ -29,3 +29,23 @@ VALUES
 (2, 'Avatar',2,1,'Ficção Científica'),
 (3, 'O Resgate do Soldado Ryan',1,3,'Guerra');
 ```
+
+Select para obter os dados cruzados entre diretor e filme relacionados
+```sql
+SELECT *
+    FROM public.tb_diretor
+    INNER JOIN  tb_filme
+    ON tb_filme.id_diretor = tb_diretor.id_diretor;
+```
+
+### Voltando ao psql
+
+Listar as tabelas
+```sh 
+\dt
+```
+
+Consulta da tablea filme
+```sh 
+select * from tb_filme;
+```
