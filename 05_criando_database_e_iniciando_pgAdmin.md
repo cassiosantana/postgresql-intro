@@ -25,5 +25,5 @@ Listar os usuários e seus atributos, permissões etc...
 
 Criar tabelas
 ```sh
-CREATE DATABASE
+CREATE DATABASE catalogo;
 ```
