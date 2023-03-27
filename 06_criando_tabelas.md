@@ -8,3 +8,7 @@ CREATE TABLE tb_diretor (
     PRIMARY KEY (id_diretor)
 );
 ```
+Select simples para obter todos os campos da tabela
+```sql
+SELECT * FROM tb_diretor;
+```
