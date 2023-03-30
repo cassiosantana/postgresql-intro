@@ -16,9 +16,9 @@ select * from tb_diretor
 
 Inserindo dados da tabela produtora
 ```sql
-INSERT INTO tb_produtora (id_produtora, nome_produtora) VALUES (1, '20th Century Studios')
-INSERT INTO tb_produtora (id_produtora, nome_produtora) VALUES (2, 'Sony Pictures')
-INSERT INTO tb_produtora (id_produtora, nome_produtora) VALUES (3, 'Paramount Pictures')
+INSERT INTO tb_produtora (id_produtora, nome_produtora) VALUES (1, '20th Century Studios');
+INSERT INTO tb_produtora (id_produtora, nome_produtora) VALUES (2, 'Sony Pictures');
+INSERT INTO tb_produtora (id_produtora, nome_produtora) VALUES (3, 'Paramount Pictures');
 ```
 
 Inserindo dados da tabela filme
