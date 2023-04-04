@@ -39,13 +39,22 @@ SELECT *
 ```
 
 ### Voltando ao psql
+Entrar no banco 'catálogo'
+```sh
+\c catalogo
+```
 
 Listar as tabelas
 ```sh 
 \dt
 ```
 
-Consulta da tablea filme
+Consulta da tabela filme
 ```sh 
 select * from tb_filme;
+```
+
+Consulta na tabela diretor
+```sh
+select * from tb_diretor;
 ```
