@@ -61,6 +61,23 @@ Agora é possível fazer login da forma correta com o comando:
 psql -U postgres
 ```
 
+Agora, dentro do psql é possível também criar um novo usuario e que inclusive, caso necessário, sendo um super usuário como o postgres:
+```sh
+CREATE USER nome_do_usuario WITH PASSWORD 'senha_do_usuario' SUPERUSER;
+```
+Caso não deseje que o novo usuário não seja um super usuário basta remover o 'SUPERUSER' do comando.
+
+Posteriormente será possível fazer login com este novo usuário com este comando:
+```
+psql -U nome_do_usuario -d postgres
+```
+> A flag -d postgres indica que o usuário estará se conectando ao banco de dados postgres. Se a flag não for passada no comando o usuário tentará ser logado em um banco com seu mesmo nome e caso o mesmo não exista teremos um erro.
+
+Caso não se lembre do usuário utilizado para se logar basta digitar:
+```
+\conninfo
+```
+
 ## Agora a instalação do pgadmin
 Seguir as instruções do site oficial
 https://www.pgadmin.org/download/pgadmin-4-apt/
